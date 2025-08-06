@@ -1,0 +1,11 @@
+package com.entity;
+
+public class Student {
+
+	private int stud_id;
+	private String name;
+	private String stud_class;
+	
+	
+	
+}

@@ -1,0 +1,25 @@
+package com.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.entity.Student;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("springbeans.xml"); // write the name of
+																							// springbeans.xml file
+
+		Student s = context.getBean(Student.class);
+		
+//		s.setStud_id(120);
+//		s.setName("shyam");
+//		s.setStud_class("10th");
+
+		System.out.println(s);
+
+	}
+
+}
