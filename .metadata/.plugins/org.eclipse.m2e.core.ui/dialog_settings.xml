@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Coding\workspaces\227 spring workspace\Spring_with_XMLbase\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,12 +44,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.tka"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Spring_with_XMLbase"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

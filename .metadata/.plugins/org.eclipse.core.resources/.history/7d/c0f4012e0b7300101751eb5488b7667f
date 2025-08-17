@@ -1,9 +1,0 @@
-package com.entity;
-
-public class Student {
-
-	private int stude_id;
-	private String name;
-	private str
-	
-}
