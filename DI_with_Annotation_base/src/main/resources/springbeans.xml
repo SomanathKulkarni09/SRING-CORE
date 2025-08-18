@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<!-- name of this file must be springbeans.xml -->
+
+<beans>
+<!-- 
+	<bean id="stud" class="com.entity.Student">
+		<property name="stud_id" value="121"></property>
+		<property name="name" value="ram"></property>
+		<property name="stud_class" value="8th"></property>
+		<property name="con" ref="con"></property>         //we have mention here the reff by the id
+		
+	</bean>
+
+	<bean id="con" class="com.entity.Country">
+
+
+		<property name="c_id" value="+91"></property>
+		<property name="name" value="India"></property>
+
+	</bean>
+
+ -->
+ 
+ <bean id="con" class="com.entity.Country">
+
+		<constructor-arg index="0" value="+91"></constructor-arg>
+		<constructor-arg index="1" value="IND"></constructor-arg>
+
+	</bean>
+	<bean id="stud" class="com.entity.Student">
+		<constructor-arg index="0" value="123"></constructor-arg>
+		<constructor-arg index="1" value="soma"></constructor-arg>
+		<constructor-arg index="2" value="11th"></constructor-arg>
+		<constructor-arg index="3"  ref="con"></constructor-arg>  <!-- here we add dependency injection  -->
+	</bean>
+	
+	
+</beans>
