@@ -1,9 +1,15 @@
 package com.entity;
 
 import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+/*
+ * //@Scope("singleton") @Scope("prototype") Defines the lifecycle scope of a
+ * Spring bean (e.g., singleton, prototype). by default Spring follow singleton
+ * design pattern (we can change the design pattern)
+ */
 public class Country {
 
 	@Value("+91") // like this we can give the value to the variables 
